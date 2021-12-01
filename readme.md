@@ -1,4 +1,4 @@
-<h1 align="center">Pizza from Above 🍕</h1>
+<h1 align="center">🍕 Pizza from Above 🍕</h1>
 
 [Vuex-url]: https://cli.vuejs.org/
 [Vuex-image]: https://img.shields.io/badge/Vuex-darkgreen?style=square&logo=Vue.JS&logoColor=green&labelColor=gray&label=^3.0.1
@@ -11,15 +11,11 @@
 
 <div align="center">
 
-[![Technology][Vuex-image]][Vuex-url]
-
-[![library][VueJS-image]][VueJS-url]
-
-[![library][Typescript-image]][Typescript-url]
+[![Technology][Vuex-image]][Vuex-url] [![library][VueJS-image]][VueJS-url] [![library][Typescript-image]][Typescript-url]
 
 </div>
 
-
+---
 
 <h2>📝 Description</h2>
 
