@@ -31,5 +31,5 @@ _VueJS Application about a store that sells pizza. Pizza with love, from the god
 ```
 
 ```
-- yarn run
+- yarn serve
 ```
