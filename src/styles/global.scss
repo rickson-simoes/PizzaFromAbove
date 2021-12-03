@@ -1,3 +1,14 @@
+// $bp-small : 24em;
+// $bp-small-2 : 29.75em;
+// $bp-small-3 : 39.8em;
+// $bp-med : 46.8em;
+// $bp-med-2 : 48em;
+// $bp-large : 50em;
+// $bp-large-2 : 54.5em;
+// $bp-xl : 60em;
+// $bp-xl-2 : 67em;
+// $bp-xl-3: 73em;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +16,13 @@
 }
 
 @font-face {
-  font-family: 'OneDotCd';
-  src: local('OneDotCd'),
+  font-family: 'DominosFont';
+  src: local('DominosFont'),
   url(../fonts/OneDotCd-Bold.woff2) format("truetype");
+}
+
+:root {
+  --blueDominos: #006491;
 }
 
 body {
@@ -15,5 +30,5 @@ body {
 }
 
 body, input, button, textarea {
-  font-family: 'OneDotCd', sans-serif;
+  font-family: 'DominosFont', sans-serif;
 }

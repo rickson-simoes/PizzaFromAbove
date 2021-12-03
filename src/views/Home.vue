@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Home
+    Página Home
   </div>
 </template>
 
@@ -11,3 +11,9 @@ export default defineComponent({
   name: 'Index',
 });
 </script>
+
+<style lang="scss" scoped>
+.home {
+  color: blue;
+}
+</style>
