@@ -25,17 +25,17 @@
   </header>
 </template>
 
-<script>
-import store from '@/store/index';
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   computed: {
     cart() {
       return this.$store.state.cart;
     },
   },
 
-};
+});
 </script>
 
 <style lang="scss">
