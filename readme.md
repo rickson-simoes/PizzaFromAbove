@@ -21,8 +21,6 @@
 
 _VueJS Application about a store that sells pizza. Pizza with love, from the gods_
 
-<!-- [![Exemplo2](https://raw.githubusercontent.com/rickson-simoes/Moco/master/img_exemplos/exemplo2.png "Demonstração de projeto - Item inserido")](https://raw.githubusercontent.com/rickson-simoes/Moco/master/img_exemplos/exemplo2.png "Demonstração de projeto") -->
-
 
 <h2>🖥 How to execute this project?</h2>
 
@@ -33,3 +31,10 @@ _VueJS Application about a store that sells pizza. Pizza with love, from the god
 ```
 - yarn serve
 ```
+
+
+<h2>📸 App Images</h2>
+
+[![Pizza-2](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.png "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.png "Demonstração de projeto")
+
+[![Pizza1](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.png "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.png "Demonstração de projeto")
