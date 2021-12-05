@@ -18,7 +18,7 @@
           💻 Fazer login
         </li>
         <li class="list-nav-items list-nav-cart">
-          <div class="list-cart-name">Carrinho <span class="list-cart-quantity">2</span></div>
+          <div class="list-cart-name">Carrinho <span class="list-cart-quantity">{{cart}}</span></div>
         </li>
       </ul>
     </nav>
@@ -26,7 +26,14 @@
 </template>
 
 <script>
+import store from '@/store/index';
+
 export default {
+  computed: {
+    cart() {
+      return this.$store.state.cart;
+    },
+  },
 
 };
 </script>

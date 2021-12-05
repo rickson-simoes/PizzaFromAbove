@@ -2,10 +2,10 @@
   <main>
     <ul>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza chocolate"/>
+        <img src="@/assets/pizza-portu.png" alt="pizza portuguesa"/>
         <strong>Portuguesa</strong>
         <span>R$100,00</span>
-        <button>
+        <button @click="add()">
           <div>🛒 0</div>
 
           <span>Adicionar ao carrinho</span>
@@ -15,17 +15,17 @@
         <img src="@/assets/pizza-choco.png" alt="pizza chocolate"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
-        <button>
+        <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
           <span>Adicionar ao carrinho</span>
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza chocolate"/>
+        <img src="@/assets/pizza-portu.png" alt="pizza portuguesa"/>
         <strong>Portuguesa</strong>
         <span>R$100,00</span>
-        <button>
+        <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
           <span>Adicionar ao carrinho</span>
@@ -35,37 +35,7 @@
         <img src="@/assets/pizza-choco.png" alt="pizza chocolate"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
-        <button>
-          <div>🛒 0</div>
-
-          <span>Adicionar ao carrinho</span>
-        </button>
-      </li>
-      <li>
-        <img src="@/assets/pizza-choco.png" alt="pizza chocolate"/>
-        <strong>Chocolate</strong>
-        <span>R$100,00</span>
-        <button>
-          <div>🛒 0</div>
-
-          <span>Adicionar ao carrinho</span>
-        </button>
-      </li>
-      <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza chocolate"/>
-        <strong>Portuguesa</strong>
-        <span>R$40,00</span>
-        <button>
-          <div>🛒 0</div>
-
-          <span>Adicionar ao carrinho</span>
-        </button>
-      </li>
-      <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza chocolate"/>
-        <strong>Portuguesa</strong>
-        <span>R$40,00</span>
-        <button>
+        <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
           <span>Adicionar ao carrinho</span>
@@ -77,14 +47,33 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import store from '@/store/index';
 
 export default defineComponent({
   name: 'Index',
+  methods: {
+    add() {
+      store.commit('increment');
+
+      console.log(store.state.cart); // -> 1
+    },
+  },
 
 });
 </script>
 
 <style lang="scss" scoped>
+[buttonUnderMaintenance] {
+  background: rgb(153, 153, 153);
+  color: rgb(83, 83, 83);
+  cursor: not-allowed;
+
+  &:hover {
+    background: rgb(59, 59, 59);
+    color: rgb(0, 0, 0);
+  }
+}
+
 main {
   padding: 2rem;
   max-width: 850px;
