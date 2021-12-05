@@ -46,16 +46,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import store from '@/store/index';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Index',
   methods: {
     add() {
-      store.commit('increment');
+      this.$store.commit('increment');
 
-      console.log(store.state.cart); // -> 1
+      console.log(this.$store.state.cart); // -> 1
     },
   },
 
