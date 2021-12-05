@@ -35,6 +35,6 @@ _VueJS Application about a store that sells pizza. Pizza with love, from the god
 
 <h2>📸 App Images</h2>
 
-[![Pizza-2](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.png "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.png "Demonstração de projeto")
+[![Pizza-2](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.jpg "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-2.jpg "Demonstração de projeto")
 
-[![Pizza-1](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.png "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.png "Demonstração de projeto")
+[![Pizza-1](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.jpg "Responsividade Mínima de Projeto")](https://raw.githubusercontent.com/rickson-simoes/PizzaFromAbove/master/imgs_samples/Pizza-1.jpg "Demonstração de projeto")
