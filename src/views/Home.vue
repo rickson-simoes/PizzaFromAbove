@@ -105,6 +105,7 @@ main {
       flex-direction: column;
       background: #FFF;
       border-radius: 10px;
+      border: 1px solid rgb(255, 207, 207);
 
       img {
         align-self: center;
@@ -114,13 +115,13 @@ main {
       strong {
         line-height: 20px;
         color:#006491;
-        margin: 10px 0 0 0;
+        margin: 10px 5px;
       }
 
       > span {
         line-height: 20px;
         color:#ac0000;
-        margin: 10px 0 0 0;
+        margin: 10px 5px;
       }
 
       button {
@@ -145,6 +146,35 @@ main {
           margin-left: 10px;
         }
 
+      }
+    }
+  }
+}
+
+@media all and (max-width:46.8em) {
+  main {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+
+      li{
+
+        strong {
+          font-size: 1.2rem;
+        }
+
+        > span {
+          font-size: 1.2rem;
+
+          margin-bottom: 10px;
+        }
+
+        button {
+          font-size: 1.2rem;
+
+          > span {
+            flex: 1;
+          }
+        }
       }
     }
   }
