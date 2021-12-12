@@ -5,7 +5,7 @@
 
     <ul>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza"/>
+        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza" loading="lazy"/>
         <strong>Cream cheese with chicken</strong>
         <span>R$100,00</span>
         <button @click="add()">
@@ -15,7 +15,7 @@
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza"/>
+        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza" loading="lazy"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
@@ -25,7 +25,7 @@
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza"/>
+        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza" loading="lazy"/>
         <strong>Cream cheese with chicken</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
@@ -35,7 +35,7 @@
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza"/>
+        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza" loading="lazy"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
