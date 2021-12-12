@@ -6,19 +6,19 @@
           <img src="@/assets/pizza-ico-256px.png" />
         </li>
         <li class="list-nav-items">
-          Sobre
+          About
         </li>
         <li class="list-nav-items">
-          Peça Online
+          Order online
         </li>
         <li class="list-nav-items">
-          Promoções
+          Promos
         </li>
         <li class="list-nav-items list-nav-login">
-          💻 Fazer login
+          💻 Login
         </li>
         <li class="list-nav-items list-nav-cart">
-          <div class="list-cart-name">Carrinho <span class="list-cart-quantity">{{cart}}</span></div>
+          <div class="list-cart-name">Cart <span class="list-cart-quantity">{{cart}}</span></div>
         </li>
       </ul>
     </nav>

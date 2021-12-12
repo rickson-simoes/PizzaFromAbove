@@ -1,44 +1,47 @@
 <template>
   <main>
+
+    <h2 class="title-start-order"> START YOUR <span>ORDER</span> </h2>
+
     <ul>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza portuguesa"/>
-        <strong>Portuguesa</strong>
+        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza"/>
+        <strong>Cream cheese with chicken</strong>
         <span>R$100,00</span>
         <button @click="add()">
           <div>🛒 0</div>
 
-          <span>Adicionar ao carrinho</span>
+          <span>Add to the cart</span>
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-choco.png" alt="pizza chocolate"/>
+        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
-          <span>Adicionar ao carrinho</span>
+          <span>Add to the cart</span>
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-portu.png" alt="pizza portuguesa"/>
-        <strong>Portuguesa</strong>
+        <img src="@/assets/pizza-portu.png" alt="Cream cheese with chicken pizza"/>
+        <strong>Cream cheese with chicken</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
-          <span>Adicionar ao carrinho</span>
+          <span>Add to the cart</span>
         </button>
       </li>
       <li>
-        <img src="@/assets/pizza-choco.png" alt="pizza chocolate"/>
+        <img src="@/assets/pizza-choco.png" alt="Chocolate pizza"/>
         <strong>Chocolate</strong>
         <span>R$100,00</span>
         <button buttonUnderMaintenance>
           <div>🛒 0</div>
 
-          <span>Adicionar ao carrinho</span>
+          <span>Add to the cart</span>
         </button>
       </li>
     </ul>
@@ -73,27 +76,50 @@ export default defineComponent({
   }
 }
 
+.title-start-order {
+  color: var(--blueDominos);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+
+  > span {
+    color: #ac0000;
+    margin-left: 0.50rem;
+  }
+
+  &::before,  &::after {
+    content: " ";
+    background-color: #dcdcdc;
+    height: 2px;
+    width: 70px;
+    margin: 0 15px;
+    display: flex;
+  }
+}
+
 main {
   padding: 2rem;
-  max-width: 850px;
+  max-width: 750px;
   margin: 50px auto;
   border: 1px dashed #ffc9c9;
   border-radius: 5px;
 
   ul {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
     column-gap: 2rem;
     //same as gap: 2rem;
     list-style: none;
 
     li {
-      display: flex;
+      padding:10px;     display: flex;
       flex-direction: column;
       background: #FFF;
       border-radius: 10px;
-      border: 1px solid rgb(255, 207, 207);
+      border: 1px solid rgb(255, 226, 226);
 
       img {
         align-self: center;
