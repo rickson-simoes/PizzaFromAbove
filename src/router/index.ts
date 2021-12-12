@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import PizzaList from '../views/PizzaList.vue';
+import List from '../views/List.vue';
+import About from '../views/About.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'PizzaList',
-    component: PizzaList,
+    name: 'List',
+    component: List,
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
   },
 ];
 

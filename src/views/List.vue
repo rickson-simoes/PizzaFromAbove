@@ -128,7 +128,7 @@ main {
 
       strong {
         line-height: 20px;
-        color:#006491;
+        color: var(--blueDominos);
         margin: 10px 5px;
       }
 
