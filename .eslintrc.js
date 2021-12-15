@@ -22,6 +22,7 @@ module.exports = {
     'import/extensions': 'off',
     'no-param-reassign': 'off',
     'no-alert': 'warn',
-    'no-unused-vars': 'warn'
+    'no-unused-vars': 'warn',
+    'import/prefer-default-export': 'off'
   },
 };

@@ -8,7 +8,7 @@
         <img src="@/assets/pizza-flavors/pizza-portuguese.png" alt="Cream cheese with chicken pizza" loading="lazy"/>
         <strong>Cream cheese with chicken</strong>
         <span>R$100,00</span>
-        <button @click="add()">
+        <button>
           <div>🛒 0</div>
 
           <span>Add to the cart</span>
@@ -20,15 +20,19 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import api from '@/services/apiCallService';
 
 export default defineComponent({
   name: 'Index',
   methods: {
-    add() {
-      this.$store.commit('increment');
 
-      console.log(this.$store.state.cart); // -> 1
-    },
+  },
+  created() {
+    const data = api.getPizzasList()
+      .then((response: any) => response.data)
+      .catch((err) => {
+        console.log(err);
+      });
   },
 
 });
