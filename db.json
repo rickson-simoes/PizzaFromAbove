@@ -1,0 +1,28 @@
+{
+  "pizzasList": [
+    {
+      "id": "347eca34-74b0-47d6-b78e-13d2bfd5c0b3",
+      "category": "pizzas",
+      "title": "Chicken with Cream cheese",
+      "description": "Chicken with cream cheese, zeus can't handle how creamy this is!",
+      "price": "15.00",
+      "url": "@/assets/pizza-flavors/pizza-chicken-creamcheese.png"
+    },
+    {
+      "id": "2e53dbb9-0dfd-4221-bde7-307f38400edf",
+      "category": "pizzas",
+      "title": "Cream cheese Pizza",
+      "description": "Cream cheese pizza, zeus can't handle how creamy this is!",
+      "price": "15.00",
+      "url": "@/assets/pizza-flavors/pizza-chocolate.png"
+    },
+    {
+      "id": "71c297a2-2887-4888-8a82-7612377f2176",
+      "category": "pizzas",
+      "title": "Cream cheese Pizza",
+      "description": "Cream cheese pizza, zeus can't handle how creamy this is!",
+      "price": "15.00",
+      "url": "@/assets/pizza-flavors/pizza-portuguese"
+    }
+  ]
+}

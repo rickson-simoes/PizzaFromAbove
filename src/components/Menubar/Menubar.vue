@@ -28,7 +28,7 @@
           </a>
         </li>
         <li class="list-nav-items list-nav-cart">
-          <div class="list-cart-name">Cart <span class="list-cart-quantity">{{cart}}</span></div>
+          <div class="list-cart-name">Cart <span class="list-cart-quantity">0</span></div>
         </li>
       </ul>
     </nav>
@@ -39,11 +39,6 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  computed: {
-    cart() {
-      return this.$store.state.cart;
-    },
-  },
 
 });
 </script>
