@@ -1,8 +1,10 @@
 import { Store } from 'vuex';
+import { IItemPayload } from '@/DTOS/ItemPayload.dto';
 
 declare module '@vue/runtime-core' {
   interface State {
-    cart: number
+    pizzasList: IItemPayload[],
+    cart: IItemPayload[],
   }
 
   interface ComponentCustomProperties {

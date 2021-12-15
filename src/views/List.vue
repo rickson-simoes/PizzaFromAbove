@@ -4,10 +4,10 @@
     <h2 class="title-start-order"> START YOUR <span>ORDER</span> </h2>
 
     <ul>
-      <li>
-        <img src="@/assets/pizza-flavors/pizza-portuguese.png" alt="Cream cheese with chicken pizza" loading="lazy"/>
-        <strong>Cream cheese with chicken</strong>
-        <span>R$100,00</span>
+      <li v-for="item in pizzasList" :key="item">
+        <img :src="require(`@/assets/${item.url}`)" :alt="item.title" loading="lazy"/>
+        <strong>{{item.title}}</strong>
+        <span>{{item.price}}</span>
         <button>
           <div>🛒 0</div>
 
@@ -20,19 +20,17 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import api from '@/services/apiCallService';
+import { IItemPayload } from '@/DTOS/ItemPayload.dto';
 
 export default defineComponent({
   name: 'Index',
-  methods: {
-
-  },
   created() {
-    const data = api.getPizzasList()
-      .then((response: any) => response.data)
-      .catch((err) => {
-        console.log(err);
-      });
+    this.$store.dispatch('fetchPizzasList');
+  },
+  computed: {
+    pizzasList():IItemPayload[] {
+      return this.$store.state.pizzasList;
+    },
   },
 
 });
