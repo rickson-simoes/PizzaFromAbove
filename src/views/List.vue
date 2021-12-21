@@ -4,7 +4,7 @@
     <h2 class="title-start-order"> START YOUR <span>ORDER</span> </h2>
 
     <ul>
-      <li v-for="item in pizzasList" :key="item">
+      <li v-for="item in pizzasList.list" :key="item">
         <img :src="require(`@/assets/${item.url}`)" :alt="item.title" loading="lazy"/>
         <strong>{{item.title}}</strong>
         <span>{{item.price}}</span>
@@ -19,18 +19,19 @@
 </template>
 
 <script lang="ts">
+import { mapState, mapActions } from 'vuex';
 import { defineComponent } from 'vue';
-import { IItemPayload } from '@/DTOS/ItemPayload.dto';
 
 export default defineComponent({
-  name: 'Index',
+  name: 'List',
+  methods: {
+    ...mapActions('pizzasList', ['fetchPizzasList']),
+  },
   created() {
-    this.$store.dispatch('fetchPizzasList');
+    this.fetchPizzasList();
   },
   computed: {
-    pizzasList():IItemPayload[] {
-      return this.$store.state.pizzasList;
-    },
+    ...mapState(['pizzasList']),
   },
 
 });
